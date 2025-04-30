@@ -7,7 +7,7 @@ import emotion from "../../Assets/Projects/glob.PNG";
 import editor from "../../Assets/Projects/easy.png";
 import chatify from "../../Assets/Projects/vertex.PNG";
 import suicide from "../../Assets/Projects/cyber.PNG";
-import bitsOfCode from "../../Assets/Projects/Wallid.PNG";
+import bitsOfCode from "../../Assets/Projects/Wallid.png";
 
 function Projects() {
   return (
@@ -37,10 +37,18 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Vertex"
-              demoLink="https://vertexltd.netlify.app/"
+              demoLink="https://vertexflex.com/"
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="Shelf 21 website/Dashboard"
+              demoLink="https://www.shelf21.com/"
+            />
+          </Col>    
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -50,13 +58,12 @@ function Projects() {
               demoLink="https://www.pavilionbookings.com/"
             />
           </Col>
-          
-
+        
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="GLobfolio"
+              title="Globfolio"
               demoLink="https://globfolio-landing.netlify.app/"
             
             />
@@ -70,17 +77,6 @@ function Projects() {
               demoLink="https://easycomp-tech.netlify.app/"              
             />
           </Col>
-
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Wall-ID Dashboard"
-              demoLink="https://wall-id-dash.netlify.app/"
-            />
-          </Col>        
-
         </Row>
       </Container>
     </Container>

@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/easy.png";
 import chatify from "../../Assets/Projects/vertex.PNG";
 import suicide from "../../Assets/Projects/cyber.PNG";
 import bitsOfCode from "../../Assets/Projects/shelf.png";
+import tobi from "../../Assets/Projects/tobi.png"; // Added TobisWurld image
 
 function Projects() {
   return (
@@ -75,6 +76,15 @@ function Projects() {
               isBlog={false}
               title="Easycomp Technologies"
               demoLink="https://easycomp-tech.netlify.app/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tobi}
+              isBlog={false}
+              title="TobisWurld"
+              demoLink="https://tobiswurld.com.ng/"              
             />
           </Col>
         </Row>

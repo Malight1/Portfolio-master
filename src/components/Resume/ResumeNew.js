@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/OguntundeMubarakresume.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
+import { AiOutlineDownload, AiOutlineMessage } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -25,10 +25,19 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", marginRight: "15px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="primary"
+            href="https://www.linkedin.com/in/mubarak-oguntunde-168724193/"
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineMessage />
+            &nbsp;Contact Me
           </Button>
         </Row>
 
@@ -43,10 +52,19 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", marginRight: "15px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
+          </Button>
+          <Button
+            variant="primary"
+            href="https://www.linkedin.com/in/mubarak-oguntunde-168724193/"
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineMessage />
+            &nbsp;Contact Me
           </Button>
         </Row>
       </Container>

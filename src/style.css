@@ -887,3 +887,30 @@ button:focus {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.88);
 }
+
+/* --------- */
+/* Resume action buttons */
+/* --------- */
+.resume-actions {
+  justify-content: center;
+  gap: 12px;
+  margin: 0 !important;
+}
+
+.resume-actions > .btn {
+  width: 250px !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 767px) {
+  .resume-section {
+    padding-top: 140px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+}

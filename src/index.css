@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+html {
+  background-color: #140f23;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
@@ -30,4 +34,12 @@ body {
 .pro{
   display: flex;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .Link_pro {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    margin: 1.5rem 1rem;
+    white-space: nowrap;
+  }
 }

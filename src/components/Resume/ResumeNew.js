@@ -20,12 +20,12 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className="resume-actions">
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", marginRight: "15px" }}
+            rel="noreferrer"
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -33,7 +33,6 @@ function ResumeNew() {
           <Button
             variant="primary"
             href="mailto:Oguntunde722@gmail.com"
-            style={{ maxWidth: "250px" }}
           >
             <AiOutlineMessage />
             &nbsp;Email Me
@@ -47,12 +46,12 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className="resume-actions">
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", marginRight: "15px" }}
+            rel="noreferrer"
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -60,7 +59,6 @@ function ResumeNew() {
           <Button
             variant="primary"
             href="mailto:Oguntunde722@gmail.com"
-            style={{ maxWidth: "250px" }}
           >
             <AiOutlineMessage />
             &nbsp;Email Me

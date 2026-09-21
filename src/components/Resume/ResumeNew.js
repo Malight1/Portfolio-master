@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/OguntundeMubarakresume.pdf";
+import pdf from "../../Assets/Mubarak_General_Resume_ATS.pdf";
 import { AiOutlineDownload, AiOutlineMessage } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -32,18 +32,18 @@ function ResumeNew() {
           </Button>
           <Button
             variant="primary"
-            href="https://www.linkedin.com/in/mubarak-oguntunde-168724193/"
-            target="_blank"
+            href="mailto:Oguntunde722@gmail.com"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineMessage />
-            &nbsp;Contact Me
+            &nbsp;Email Me
           </Button>
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document file={pdf} className="d-flex flex-column align-items-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
 
@@ -59,12 +59,11 @@ function ResumeNew() {
           </Button>
           <Button
             variant="primary"
-            href="https://www.linkedin.com/in/mubarak-oguntunde-168724193/"
-            target="_blank"
+            href="mailto:Oguntunde722@gmail.com"
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineMessage />
-            &nbsp;Contact Me
+            &nbsp;Email Me
           </Button>
         </Row>
       </Container>

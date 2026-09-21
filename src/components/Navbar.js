@@ -4,9 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import {
-  AiFillStar,
+  AiFillGithub,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
@@ -85,10 +84,11 @@ function NavBar() {
               <Button
                 href="https://github.com/Malight1"
                 target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub profile"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <AiFillGithub style={{ fontSize: "1.3em" }} />
               </Button>
             </Nav.Item>
           </Nav>

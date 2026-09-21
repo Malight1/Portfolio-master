@@ -1,28 +1,30 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
   SiPostman,
-  SiSlack,
-  SiNetlify
+  SiFigma,
+  SiGithub,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
+import SkillTile from "./SkillTile";
+
+const tools = [
+  { Icon: SiVisualstudiocode, label: "VS Code" },
+  { Icon: SiPostman, label: "Postman" },
+  { Icon: SiFigma, label: "Figma" },
+  { Icon: SiGithub, label: "GitHub" },
+  { Icon: SiVercel, label: "Vercel" },
+  { Icon: SiNetlify, label: "Netlify" },
+];
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-    
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-      <SiNetlify />
-      </Col>
+      {tools.map((tool) => (
+        <SkillTile key={tool.label} {...tool} />
+      ))}
     </Row>
   );
 }

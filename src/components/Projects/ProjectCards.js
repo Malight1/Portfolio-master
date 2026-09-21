@@ -6,29 +6,28 @@ import { CgWebsite } from "react-icons/cg";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title style={{ lineHeight: "1.5", fontSize: "1.3rem", minHeight: "3rem" }}>
-          {props.title}
-        </Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        
-        {"\n"}
-        {"\n"}
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt={props.title}
+        style={{ aspectRatio: "2 / 1", objectFit: "cover", objectPosition: "top" }}
+      />
+      <Card.Body className="project-card-body">
+        {props.tag && <span className="project-tag">{props.tag}</span>}
+        <Card.Title className="project-card-title">{props.title}</Card.Title>
+        <Card.Text className="project-card-text">{props.description}</Card.Text>
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
+        {/* Demo button renders only for non-blog cards that have a link */}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            rel="noreferrer"
+            className="project-card-btn"
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {"Live Demo"}
           </Button>
         )}
       </Card.Body>

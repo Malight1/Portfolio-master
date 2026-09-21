@@ -6,6 +6,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 function Home2() {
   return (
@@ -17,37 +18,34 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I'm a <i><b className="purple">Senior Frontend Engineer</b></i> with
+              5+ years building enterprise-grade web applications across
+              insurance, fintech and SaaS.
               <br />
-              <br />I am fluent in classics like
+              <br />I specialise in
               <i>
-                <b className="purple"> React.js, Typescript, Javascript, CSS and Api Integration. </b>
+                <b className="purple"> React.js, Next.js and TypeScript</b>
+              </i>
+              , and I'm capable across the stack with
+              <i>
+                <b className="purple"> Node.js, Express and Supabase.</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I've cut frontend bugs by up to 40% and lifted shipping velocity
+              by 20%+ through
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple"> design systems and modular architecture</b>
               </i>
+              , and I enjoy mentoring engineers through code reviews.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with
+              Beyond client work, I build independent products end to end, from
+              API and database design through to
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple"> deployment</b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              .
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -85,6 +83,15 @@ function Home2() {
                 </a>
               </li>
             
+                          <li className="social-icons">
+                <a
+                  href="mailto:Oguntunde722@gmail.com"
+                  aria-label="Email Mubarak"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiOutlineMail />
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>
